@@ -15,25 +15,26 @@ navegador.maximize_window()
 botao_exemplo = navegador.find_element("class name", "nav-link") # pega o primeiro elemento que aparece dessa classe 
 
 #clickar no elemento pego
-#botao_exemplo.click() #esse .click simula um click com o botao esquerdo do mouse
+botao_exemplo.click() #esse .click simula um click com o botao esquerdo do mouse
 
 
-lista_exemplo = navegador.find_elements("class name", "nav-link")
+lista_exemplo = navegador.find_elements("class name", "nav-link") 
+#aqui usamos find_element!s!
 
 for botao in lista_exemplo:
     texto = botao.text.strip()  # remove espaços extras
-    print("Achei:", texto)      # printa todos os textos com a classe nav-link assim vou saber o texto que queria
+    print("Achei:", texto)      # printa todos os textos com a classe nav-link assim vou saber o texto que eu queria
     if "FAÇA PARTE" in texto: # aqui eu coloco o texto que eu quero que a automação clique
         botao.click() # se achar entao ela clicka e encerra o loop
         break
 
 
-#abas = navegador.window_handles                 # gerencia a abas e as coloca em um array -retorna um array de paginas-
-#navegador.switch_to.window(abas[1])              # muda a aba que os proximos comandos serao feitos
+abas = navegador.window_handles # gerencia a abas e as coloca em um array -retorna um array de paginas-
+navegador.switch_to.window(abas[1]) # muda a aba que os proximos comandos serao feitos
 
 lista_vagas = navegador.find_elements("class name", "btn-primary")
 
-lista_vagas[4].click() # click no item 5 dos elementos da classe btn-primary
+lista_vagas[4].click() # clicka no item 5 dos elementos da classe btn-primary
 enviarCandidatura = navegador.find_element("class name", "btn-success") # testa mensagem de erro no formulario
 #enviarCandidatura.click() clickar aqui ele bloqueia
 
@@ -56,5 +57,3 @@ time.sleep(5)
 enviarCandidatura.click()
 
 time.sleep(10)
-
-
