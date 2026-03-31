@@ -75,7 +75,7 @@ Enviar um arquivo indicando o caminho do meu diretorio de pastas onde se encontr
 #### Dando Scroll na tela com Javascript
 <img width="3294" height="454" alt="injetando script" src="https://github.com/user-attachments/assets/5ceed294-21f2-450d-8385-5f35431b5f48" />
 
-Após me alertar um erro dizendo que nao encontrava o elemento na pagina, Achei na documentação do Selenium possiveis soluções para o erro e lá ele me entregou a solução mostrando que podemos injetar no Selenium um codigo javaScrpit que me permite dar Scroll na tela assim fazendo o elemento que eu estava buscando aparecer na tela e ser identificado pelo Selenium
+Após me alertar um erro dizendo que nao encontrava o elemento na pagina, Achei na documentação do Selenium possiveis soluções para o erro e lá ele me entregou a solução mostrando que podemos injetar no Selenium um codigo javaScript que me permite dar Scroll na tela assim fazendo o elemento que eu estava buscando aparecer na tela e ser identificado pelo Selenium
 ***
 
 #### Completando o objetivo da automação
